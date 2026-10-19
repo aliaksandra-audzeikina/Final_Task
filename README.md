@@ -1,4 +1,14 @@
-Task description
+SauceDemo UI Test Automation
+
+Project Overview
+
+This project was developed as part of the EPAM Fundamentals Automated Testing in .NET learning assignment.
+It focuses on automating key UI workflows of the SauceDemo web application using C#, Selenium WebDriver, and NUnit.
+
+The project applies the Page Object Model (POM), reusable test infrastructure, explicit waits, cross-browser testing, parallel execution, and automated failure screenshots.
+
+Original Task Requirements
+
 Site for testing: https://www.saucedemo.com
 
 UC-1 Test Login form with only Username provided:
@@ -31,26 +41,46 @@ UC-3 Test adding products to shopping cart:
 
 4. Verify that the shopping cart icon displays the number of added products.
 
-Provide possibility to execute tests in parallel, add logging to track execution flow and use data-driven testing approach.
+Technology Stack
 
-Make sure that all tasks are supported by these 3 conditions: UC-1; UC-2; UC-3.
+Language: C#
 
-Please, add task description as README.md into your solution!
+Platform: .NET
 
-To perform the task use the various of additional options:
+UI Automation: Selenium WebDriver
 
-Test Automation tool: Selenium WebDriver;
+Test Runner: NUnit
 
-Browsers: 1) Firefox; 2) Chrome;
+Assertions: FluentAssertions
 
-Locators: CSS;
+Locators: CSS selectors
 
-Test Runner: NUnit;
+Browsers: Chrome and Firefox
 
-Assertions: Fluent Assertion;
+Project Structure
 
-[Optional] Patterns: Singleton; 2) Factory method; 3) Abstract Factory;
+Core/ — WebDriver factory, base test class, browser names, test settings, and wait helper.
 
-[Optional] Test automation approach: BDD;
+Pages/ — Page Object classes for login, inventory, and product details.
 
-[Optional] Loggers: NUnit.
+TestData/ — Test users and credentials.
+
+Tests/ — NUnit test scenarios.
+
+How to Run
+
+1. Clone the repository.
+
+2. Open the solution in Visual Studio.
+
+3. Restore NuGet packages.
+
+4. Build the solution.
+
+5. Run the tests using Test Explorer.
+
+Ensure that the required browser and WebDriver setup is available in your environment.
+
+Learning Outcomes
+
+Practiced UI test automation, Page Object Model design, explicit waits, data-driven testing, cross-browser execution, parallel testing, reusable test infrastructure, and failure diagnostics.

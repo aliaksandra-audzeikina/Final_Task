@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 
-namespace Final_Task
+namespace Final_Task.Core
 {
     public static class DriverFactory
     {
